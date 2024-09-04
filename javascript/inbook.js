@@ -193,7 +193,7 @@ window.addEventListener('load', function(){
         document.getElementById("comment-text").value = '';
     });
 
-    // Phần popup nha mậy
+    // Phần popup nha mậy (CC)
     let myBooks = document.querySelectorAll(".book img");
     let myId = document.getElementById("popImg");
     let popup = document.querySelector(".popup");
