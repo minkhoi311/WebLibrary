@@ -1,0 +1,569 @@
+/* thanh tiêu đề */
+.head-content {
+    justify-content: space-between;
+    margin:5px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(#f7f8f8, #f5e6e0,#f7c6c7, #f2a5a5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head-content > h1 {
+    color:#fe8e8e;
+}
+
+.head-content > div > a {
+    text-decoration: none;
+    color:aliceblue;
+}
+/* phần main */
+ /* phần tác giả */
+.left-content {
+    flex:1;
+    box-sizing: border-box;
+    display:block;
+    padding-top:15px;
+    padding-left: 15px;
+}
+
+.left-content h3 {
+    color:aliceblue;
+}
+
+.info > div > span {
+    padding-top:3px;
+}
+
+.left-content img {
+    border-radius: 20px;
+    width: 15vw;
+    height: 20vw;
+}
+
+.info > div {
+    padding-top: 3px;
+}
+/* phần center*/
+.center {
+    flex: 3;
+    padding-top:47px;
+
+    flex-direction: column;
+}
+
+.in-contain {
+    width:100%;
+}
+.in-contain h3 {
+    text-align: center;
+    border-bottom: 1px solid#dbcaca;
+}
+
+.in-contain p{
+    padding-top: 20px;
+}
+
+.change {
+    width: 100%;
+}
+
+.read-btn > button {
+    text-decoration: none;
+    color: #000;
+    background-color: #e17979;
+    padding: 10px 20px;
+    margin-top:50px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-style: none;
+}
+
+.read-btn button:hover {
+    background-color:#c63b3b;
+    color:#f7f8f8; 
+    cursor: pointer;
+}
+/* phần mục cus bên phải */
+.right-content {
+    flex: 1;
+} 
+/* popular content nè (cc)*/ 
+.popular_content {
+    padding-top: 5vw;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.popular_content > li > a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3vw;
+    color:#f5e6e0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: rgba(174, 101, 101, 0.1);
+    padding: 4vw 5vw;
+    margin: 0 1vw;
+}
+
+.popular_content > li:first-child > a{
+    border-radius: 20px 20px 0 0;
+}
+
+.popular_content > li:last-child > a{
+    border-radius: 0 0 20px 20px;
+}
+
+.popular_content > li > a:hover {
+    text-decoration:none;
+    color: white; 
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 1.4vw; /* Phóng to chữ khi hover */
+    transition: font-size 0.3s ease;
+}
+
+.popular_content > li > a.active {
+    color: white; 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+/* */
+
+.incontent > div{
+    width:100%;
+    height:300px;
+    background-color:#f5e6e0; /* Màu nền sáng để làm nổi bật */
+    border-left: 1px solid #ddd; /* Đường ngăn cách với phần center */
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng để tạo chiều sâu */
+    text-align: center;
+    padding-top:50%;
+    margin-top: 20px;
+}
+
+.incontent .in > div > a {
+    text-decoration: none;
+    color:#e17979;
+}
+
+.incontent .in:hover {
+    background-color:#f7f8f8;
+    cursor: pointer;
+}
+
+button[type=button] > a {
+    text-decoration: none;
+    color:#ddd;
+}
+
+.menu h3 {
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.menu .ds{
+    border-bottom: 1px solid rgb(236, 217, 217);
+}
+
+.chap-right {
+    margin-left:60px;
+}
+
+.chaps > ul {
+    list-style-type: none;
+}
+
+.chaps > ul > li {
+    margin-top: 5px;
+}
+
+.chaps > ul > li > a {
+    text-decoration: none;
+    color:#f5e6e0;
+}
+
+.chaps > ul > li > a:hover {
+    color:#c63b3b;
+    cursor: pointer;
+}
+
+.chaps > ul > li >i {
+    color:#f5e6e0;
+}
+
+
+/* code cũ phần bookshelf*/
+.same-book {
+    margin: 10vh auto;
+    width: 90%;
+}
+.same-book > h1{
+    font-size: 2vw;
+    color: white
+}
+
+.bookshelf {
+    position: relative;
+    width: 90%;
+    background-color: rgb(241, 221, 221);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.books-container {
+    flex-direction:row;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.books {
+    transition: transform 0.5s ease;
+}
+
+.book {
+    width: 11vw;
+    text-align: center;
+    padding: 10px;
+    cursor: zoom-in;
+
+    margin: 0 1vw;
+}
+
+.book h5 > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.book h5 > a:hover {
+    color: #d55a5a;
+}
+
+.book img {
+    border-radius: 1vw;
+
+    width: 100%;
+    height: 15vw;
+}
+
+.book h5 {
+    font-size: 1vw;
+}
+
+.book div {
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.book div:hover {
+    transform: scale(1.05);
+}
+/*phần nút nè*/
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    border-radius: 40%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: red;
+}
+/*phần audio fixed nhaaaaa */ 
+.audio-flex {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(89, 73, 73, 0.5);
+    padding: 1vw;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(168, 82, 82, 0.5);
+}
+
+.audio-player {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#audio-element {
+    width: 70vw;
+    margin-top: 10px;
+}
+
+.audio-controls {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    justify-content:center;
+}
+
+.audio-controls button {
+    background-color: #fe8e8e;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 4.5vw;
+    height: 4vw;
+}
+.audio-controls i {
+    font-size: 2vw;
+}
+
+.audio-controls button:hover {
+    background-color: rgb(225, 97, 97);
+}
+
+#speed-options {
+    position: absolute;
+    background-color: #fe8e8e;
+    padding: 5px;
+    border-radius: 5px;
+    top: -60px;
+    display: none;
+    list-style: none;
+}
+
+#speed-options li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#speed-options li:hover {
+    background-color: rgb(225, 97, 97);
+}
+
+
+   /* list chaper audio */
+.chapter-list {
+    position: absolute;
+    left:0;
+}
+
+.chapter-icon {
+    width: 7vw;
+    padding: 1vw;
+    background-color: #f075b4;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1vw;
+    transition: background-color 0.3s ease;
+}
+
+.chapter-icon:hover {
+    background-color: #a42b69;
+}
+
+.chapter-items {
+    width: 7vw;
+    list-style-type: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    bottom: 100%;
+}
+
+.chapter-list:hover .chapter-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+.chapter-items li a {
+    display: block;
+    padding: 1vw;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.chapter-items li a:hover {
+    background-color: #ee3478;
+    color: white;
+}
+
+
+/* phần bình luận à nhen */
+.comments-section {
+    margin: 5vw auto;
+    padding: 2vw;
+    width: 90%;
+    background-color: #f5e6e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comments-container {
+    margin: 0 auto;
+}
+
+.comments-container h2 {
+    text-align: center;
+    color: #fe8e8e;
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+
+.comment-form {
+    margin-bottom: 3vw;
+    background-color: #f7f8f8;
+    border-radius: 10px;
+    padding: 2vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h3 {
+    color: #fe8e8e;
+}
+
+.comment-form input{
+    margin: 1vw;
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid #ddd;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    background-color: #e17979;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #c63b3b;
+}
+
+.comments-list {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.CBL {
+    color: #fe8e8e;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.comment:last-of-type {
+    border-bottom: none;
+}
+
+.comment-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2vw;
+}
+
+.comment-text {
+    margin: 5px 0;
+    font-size: 1vw;
+}
+
+.comment-date {
+    color: #888;
+    font-size: 0.9vw;
+}
+
+
+/* bảng thông báo ạ*/
+/* Modal container */
+/* Modal Styles */
+.modal {
+    display: none; /* Hide by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.modal {
+    justify-content: space-between;
+}
+
+.modal button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+}
+
+.modal button:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none; 
+}

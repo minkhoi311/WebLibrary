@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Mua hàng</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/piece_css/all.css">
+    <link rel="stylesheet" href="../css/buybook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/piece_css/footer.css">
+    <!--JS-->
+    <script src="../javascript/buy.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng ký Mua hàng</h1>
+
+        <form id="order-form">
+            <!-- Thông tin khách hàng -->
+            <section class="customer-info">
+                <h2>Thông tin khách hàng</h2>
+                <span>Họ và Tên:</span>
+                <input type="text" id="name" name="name" required>
+
+                <span>Số điện thoại:</span>
+                <input type="text" id="phone" name="phone" required>
+
+                <span>Địa chỉ Email:</span>
+                <input type="email" id="email" name="email" required>
+
+                <span>Địa chỉ Giao hàng:</span>
+                <input type="text" id="address" name="address" required>
+            </section>
+
+            <!-- Thông tin sản phẩm -->
+            <section class="product-info">
+                <h2>Thông tin sản phẩm</h2>
+                <div class="product-item">
+                    <img src="../resources/images/book/kid_book/kid_1.jpg" alt="Sản phẩm 1" class="product-image">
+                    <p>Giá: 159.000 VND</p>
+                </div>
+                <div class="total">
+                    <p><strong>Tổng cộng:</strong> 159.000 VND</p>
+                </div>
+            </section>
+
+            <!-- Phương thức thanh toán -->
+            <section class="payment-method">
+                <h2>Phương thức Thanh toán</h2>
+                <span><input type="radio" name="payment" value="cod" required> Thanh toán khi nhận hàng (COD)</span>
+                <span><input type="radio" name="payment" value="bank"> Chuyển khoản Ngân hàng</span>
+                <span><input type="radio" name="payment" value="card"> Thẻ tín dụng/Thẻ ghi nợ</span>
+                <span><input type="radio" name="payment" value="wallet"> Ví điện tử</span>
+            </section>
+
+            <!-- Mã giảm giá -->
+            <section class="discount-code">
+                <h2>Mã giảm giá (nếu có)</h2>
+                <input type="text" name="discount" placeholder="Nhập mã giảm giá">
+            </section>
+
+            <!-- Điều khoản và Điều kiện -->
+            <section class="terms">
+                <span><input type="checkbox" required> Tôi đồng ý với <a href="#">Điều khoản và Điều kiện</a></span>
+            </section>
+
+            <!-- Nút Xác nhận Đơn hàng -->
+            <button type="submit" class="submit-btn">Đặt hàng ngay</button>
+        </form>
+
+        <!-- Thông báo thành công -->
+        <div class="success-message" id="success-message">
+            Đặt hàng thành công! Vui lòng chờ xác nhận từ nhà sách thông qua email của bạn.
+            <br>
+            Xin cảm ơn !
+        </div>
+
+    </div>
+</body>
+</html>

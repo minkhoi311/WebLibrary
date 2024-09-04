@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dế mèn phiêu lưu kí</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/piece_css/all.css">
+    <link rel="stylesheet" href="../css/inbook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/piece_css/footer.css">
+    <!--Js-->
+    <script src="../javascript/inbook.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head-content">
+            <h1>Sách Thiếu Nhi</h1>
+            <div><a href="../index.html">Trang chủ  >  </a> <a href="../html/kidbook.html">Sách Thiếu Nhi  >  </a> <a href="../html/inbook.html">Dế Mèn Phiêu Lưu Ký</a></div> 
+        </div>
+    </header>
+    <!--Phần audio dạng flex-->
+    <section class="audio-flex">
+        <div class="audio-player">
+            <audio id="audio-element" controls>
+                <source src="../resources/audio/kid/dmplk/chap1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="audio-controls flex">
+                <div class="chapter-list flex">
+                    <div class="chapter-icon">Chương</div>
+                    <ul class="chapter-items">
+                        <li><a href="#chap10">Chương 10</a></li>
+                        <li><a href="#chap9">Chương 9</a></li>
+                        <li><a href="#chap8">Chương 8</a></li>
+                        <li><a href="#chap7">Chương 7</a></li>
+                        <li><a href="#chap6">Chương 6</a></li>
+                        <li><a href="#chap5">Chương 5</a></li>
+                        <li><a href="#chap4">Chương 4</a></li>
+                        <li><a href="#chap3">Chương 3</a></li>
+                        <li><a href="#chap2">Chương 2</a></li>
+                        <li><a href="#chap1">Chương 1</a></li>
+                    </ul>
+                </div>
+                <button id="speed-control">Speed x1</button>
+                <button id="rewind-btn"><i class="fas fa-undo" style="color: #ffffff;"></i></button>
+                <button id="back-track"><i class="fas fa-caret-left" style="color: #ffffff;"></i></button>
+                <button id="next-track"><i class="fas fa-caret-right" style="color: #ffffff;"></i></button>
+                <button id="forward-btn"><i class="fas fa-undo fa-flip-horizontal" style="color: #ffffff;"></i></button>
+            <ul id="speed-options" class="speed-options hidden">
+                <li data-speed="0.5">x0.5</li>
+                <li data-speed="1">x1</li>
+                <li data-speed="2">x2</li>
+                <li data-speed="3">x3</li>
+            </ul>
+
+    </section>
+    
+    <!-- Bảng thông báo -->
+    <div id="notification-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Thông báo</h2>
+            <p>Bạn có thể mượn sách trược tiếp tại cơ sở VVT đại học Mở</p>
+            <p>Hoặc bạn có thể đăng kí mua trực tiếp ở trang web này!</p>
+            <div class="flex">
+                <button id="accept">Đồng Ý</button>
+                <button id="acceptbuy">Đăng ký mua</button>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <main class="flex">
+        <section class="left-content flex">
+            <h3>Thông tin truyện</h3>
+            <img src="../resources/images/book/kid_book/kid_1.jpg" alt="">
+            <div class="info">
+                <div class="flex">
+                    <h3>Tác giả: </h3>
+                    <span>Tô Hoài</span>
+                </div>
+                <div class="flex">
+                    <h3>Thể loại: </h3>
+                    <span>Thám hiểm</span>
+                </div>
+                <div class="flex">
+                    <h3>Trạng thái: </h3>
+                    <span>Full</span>
+                </div>
+                <div class="flex">
+                    <h3>Tags: </h3>
+                    <p>
+                        <p> Hiện đại, Thiếu nhi, 
+                        Phiêu lưu, Truyện ngụ ngôn</p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="center flex">
+            <div class="in-contain">
+                <h3>ĐẾ MÈN PHIÊU LƯU KÝ</h3>
+                <p>Bạn đang đọc truyện Dế Mèn Phiêu Lưu Ký full (đã hoàn thành) của tác giả Tô Hoài. Dế Mèn đang chuẩn bị rời Hải Phòng, hành trình tiếp theo dẫn hắn vào miền Nam, và kế tiếp là hành trình đến Sô-phi-a. Năm trước, hắn đã đặt chân đến bờ sông Đa-nuýp phía này. Và bây giờ, hắn đang ở Bun-ga-ri. Dế Mèn vẫn giữ niềm ước mong khám phá.                </p>
+                <p>Trong hành trình của mình, Dế Mèn đã kết bạn với nhiều người. Hắn vẫn duy trì việc trao đổi thư tín với những người bạn ở Quảng Nam Đà Nẵng, TP.HCM, U-lan-ba-to, Răng-gun, Tô-ki-ô... Điều tuyệt vời nhất là có cơ hội đi qua nhiều nơi và gặp gỡ nhiều bạn bè. Mỗi quốc gia có những điều đặc biệt, và không bao giờ biết trước chuyện gì sẽ đến.</p>
+                <p>Một lần, tôi đến thăm trường phổ thông số 5 ở ngoại ô Mát-xcơ-va. Trong lớp học, các bạn đang ngồi lắng nghe câu chuyện về cuộc chiến Việt Nam chống lại đế quốc Mỹ. Sau đó, họ hỏi: "Các bạn có biết Dế Mèn không?" Mọi người cười rộ và cùng giơ tay lên. Bên cạnh đó, còn có những truyện cùng thể loại cũng vô cùng hay và hấp dẫn như Cổ Chân Nhân hay Nhân Đạo Chí Tôn.</p>
+            </div>
+
+            <section class="change">
+                <div class="menu">
+                    <div class="read-btn">
+                        <button type="button"><a href="../html/chaps.html">Đọc truyện</a></button>
+                    </div>
+                    <div class="ds">
+                        <h3>Danh sách chương</h3>
+                    </div>
+                    <div class="chaps flex">
+                        <ul class="chap-left">
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="../html/chaps.html">Chương 1: Tôi sống độc lập từ thủa bé</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="../html/subchap.html">Chương 2: Cuộc phiêu lưu bất ngờ</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 3: Thoát khỏi cái lồng tù</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 4: Ông anh Cả và ông anh Hai của Mèn</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 5: Một sự vô ý rất nguy hiểm</a></li>
+                        </ul>
+                        <ul class="chap-right">
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 6: Tranh hùng với võ sĩ bọ ngựa</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 7: Tâm sự bác Xiến Tóc chán đời</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 8: Mèn bị tù</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 9: Lại một chuyện rủi ro với các bạn Kiến</a></li>
+                            <li>
+                                <i class="fa-solid fa-book"></i>
+                                <a href="#">Chương 10: Mấy dòng tạm biệt của nhật ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="right-content flex">
+            <ul class="popular_content">
+                <li><a href="#ebook" class="active">Sách điện tử</a></li>
+                <li><a href="#podcast">Sách nói</a></li>
+                <li><a href="#paperbook">Sách giấy</a></li>
+            </ul>
+        </section>
+    </main>
+    <!-- lấy lại code-->
+    <section class="same-book">
+        <h1>Truyện Tương Tự</h1>
+        <div class="bookshelf" id="bookshelf1">
+            <button class="prev">&#10094;</button>
+            <div class="books-container flex">
+                <div class="books flex">
+                    <!-- Add more books here -->
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_1.jpg" alt="Book1">
+                            <h5><a href="#">Dế mèn phiêu lưu kí</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_2.jpg" alt="Book2">
+                            <h5><a href="#">Thành phố phép màu</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_3.jpg" alt="Book3">
+                            <h5><a href="#">Mơ như thế mới hay</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_4.jpg" alt="Book3">
+                            <h5><a href="#">Đi như thế mới thích</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_5.jpg" alt="Book3">
+                            <h5><a href="#">Trên đồi mở mắt và mơ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_6.jpg" alt="Book2">
+                            <h5><a href="#">Bông hồng tò he</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_7.jpg" alt="Book2">
+                            <h5><a href="#">Sơn tinh thủy tinh</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_8.jpg" alt="Book2">
+                            <h5><a href="#">Ba anh em nhà heo</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_9.jpg" alt="Book2">
+                            <h5><a href="#">Jack và cây đậu thần</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src="../resources/images/book/kid_book/kid_10.jpg" alt="Book2">
+                            <h5><a href="#">Lá đỏ</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Phần bình luận -->
+    <section class="comments-section">
+        <div class="comments-container">
+            <h2>Bình luận</h2>
+            <div class="comment-form">
+                <h3>Thêm bình luận</h3>
+                <form id="comment-form">
+                    <input type="text" id="comment-text" name="comment" required>
+                    <button id="submit-cmt" type="button">Gửi</button>
+                </form>
+            </div>
+            <div><h3 class="CBL">Các bình luận:</h3></div>
+            <div class="comments-list" id="comments-list">
+                <div class="comment">
+                    <p class="comment-name">Lê Minh Khôi</p>
+                    <p class="comment-text">Rất thú vị! Tôi rất thích hành trình của Dế Mèn.</p>
+                    <p class="comment-date">20/08/2024</p>
+                </div>
+                <div class="comment">
+                    <p class="comment-name">Nguyễn Trần Quỳnh Như</p>
+                    <p class="comment-text">Một câu chuyện đầy cảm xúc và ý nghĩa.</p>
+                    <p class="comment-date">21/08/2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <!-- Nút liên hệ bên trái -->
+        <section>
+            <button id="scrollToTop" class="scroll-to-top"></button>
+            <div class="contact-buttons">
+                <a href="https://www.facebook.com/khoi03112" target="_blank" class="contact-button flex">
+                    <img src="../resources/images/others/fb.png" alt="fb Logo">
+                </a>
+                <a href="https://www.facebook.com/ai.thien.946517" target="_blank" class="contact-button flex">
+                    <img src="../resources/images/others/ins.png" alt="ins Logo">
+                </a>
+            </div>
+         </section>
+        <div class="flex">
+            <div class="logo flex extra">
+                <img src="../resources/images/img_main/Logo_main.png" alt="Logo">
+                <h1>NGÀN SAO LIBRARY</h1>
+            </div>
+            <div class="contact">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Địa chỉ:<span>Nguyễn Bình, Nhơn Đức, Nhà Bè, Tp Hồ Chí Minh</span></li>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:nhu.nt2508@gmail.com">nhu.nt2508@gmail.com</a></li>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:khoi25922@gmail.com">khoi25922@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Hỗ trợ online</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Số điện thoại: 0387291238</li>
+                    <li><i class="fas fa-phone"></i> Số điện thoại: 0387354158</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="certi">
+            <img src="../resources/images/others/certification.png" alt="chứng nhận">
+        </div>
+        <div>
+            <p>Công ty Cổ phần Sách điện tử Ngàn Sao - Nguyễn Bình, Nhơn Đức, Huyện Nhà Bè, thành phố Hồ Chí Minh, Việt Nam.</p>
+            <p>ĐKKD số 0108796796 do SKHĐT TP Hà Nội cấp ngày 24/06/2019</p>
+            <p>Giấy xác nhận Đăng ký hoạt động phát hành xuất bản phẩm điện tử số 8132/XN-CXBIPH do Cục Xuất bản, In và Phát hành cấp ngày 31/12/2023</p>
+            <p>Giấy chứng nhận Đăng ký cung cấp dịch vụ nội dung thông tin trên mạng Viễn thông di động số 19/GCN-DĐ do Cục Phát thanh, truyền hình và thông tin điện tử ký ngày 11/03/2024</p>
+            <p>Số VPGD: 024.73086566 | Số CSKH: 1900545482 nhánh 5 | Hotline: 0393372783</p>
+        </div>
+    </footer>
+</body>
+</html>

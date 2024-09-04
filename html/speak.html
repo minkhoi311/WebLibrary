@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách nói</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/piece_css/all.css">
+    <link rel="stylesheet" href="../css/subbook.css">
+    <link rel="stylesheet" href="../css/piece_css/footer.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Js-->
+    <script src="../javascript/query-3.7.1.min.js" defer></script>
+    <script src="../javascript/subbook.js" defer></script>
+</head>
+<body>
+    <header class="head-content flex">
+        <div>
+            <h1>Sách nói</h1>
+            <div><a href="../index.html">Trang chủ  >  </a> <a href="../html/speak.html">Sách nói</a></div> 
+        </div>
+        <div class="search flex">
+            <span>Search</span>
+            <input type="search" placeholder="Nhập để tìm kiếm..."/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+<!--Phần nút chạy lên đầu (đừng quan tâm :>>> ) css của ẻm trong footer-->
+    <section>
+        <button id="scrollToTop" class="scroll-to-top"></button>
+        <!-- Nút liên hệ bên trái -->
+        <div class="contact-buttons">
+            <a href="https://www.facebook.com/khoi03112" target="_blank" class="contact-button flex">
+                <img src="../resources/images/others/fb.png" alt="fb Logo">
+            </a>
+            <a href="https://www.facebook.com/ai.thien.946517" target="_blank" class="contact-button flex">
+                <img src="../resources/images/others/ins.png" alt="ins Logo">
+            </a>
+        </div>
+        <div class="popup flex">
+            <div class="popcontent">
+                <img src="../resources/images/book/sách.jpeg" alt="popupimg" id="popImg"/>
+            </div>
+            <a href="#" class="close-pop">&times;</a>
+        </div>
+    </section>
+    <!--Ads nha-->
+    <section class="adver_display">
+        <div class="slider-container">
+            <div class = "ads_img">
+                <a href="#" target="_blank"><img src="../resources/images/img_ads/ads5.jpg" alt="ads1"></a>
+                <a href="#" target="_blank"><img src="../resources/images/img_ads/edu/edu_ads2.png" alt="ads2"></a>
+                <a href="#" target="_blank"><img src="../resources/images/img_ads/love/love_ads1.png" alt="ads3"></a>
+                <a href="#" target="_blank"><img src="../resources/images/img_ads/self/self_ads2.png" alt="ads4"></a>
+                <a href="#" target="_blank"><img src="../resources/images/kid/kid_ads1.png" alt="ads5"></a>
+            </div>
+            <div class="slider-dots flex">
+                <span class="dot actdot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
+    <!--popular content ne-->
+    <section>
+        <div>
+            <h1 class = "tieu_de" >Lắng Nghe Cùng Đọc Giả</h1>
+            <div>
+                <ul class="popular_content flex">
+                    <li><a href="#bestseller" class="active">Bán chạy nhất</a></li>
+                    <li><a href="#mostread">Đọc nhiều nhất</a></li>
+                    <li><a href="#favorite">Được yêu thích</a></li>
+                    <li><a href="#highrated">Đánh giá cao</a></li>
+                    <li><a href="#newrelease">Mới phát hành</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!--bookshelf vùng quy định ô chứa sách-->
+        <!--book-container bọc 6 cuốn-->
+        <!--books bọc 3 cuốn-->
+        <!--book là 1 cuốn-->
+        <section class="bookshelf action" id="bestseller">
+            <div class="books-container flex">
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/kid_book/kid_10.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Lá Đỏ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_1.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Dế mèn phiêu lưu kí</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_5.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Trên đồi mở mắt và mơ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_8.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Ba chú heo con</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_2.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Thành phố phép màu</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_3.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Mơ như thế mới hay</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_4.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Đi như thế mới thích</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_5.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Trên đồi mở mắt và mơ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_6.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Bông hồng tò he</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_7.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Sơn tinh thủy tinh</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_6.jpg" alt="Book2">
+                            <h5><a href="#">Có cần lấy chồng không?</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_7.jpg" alt="Book2">
+                            <h5><a href="#">Khi tôi ngẩng đầu lên lần nữa</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_8.jpg" alt="Book2">
+                            <h5><a href="#">Yêu tổng tài tội ác tài trời!</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_9.jpg" alt="Book2">
+                            <h5><a href="#">Chúng ta năm đó</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_10.jpg" alt="Book2">
+                            <h5><a href="#">Anh là tất cả những gì em ghét nhất</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--2-->
+        <section class="bookshelf" id="mostread" style="display: none;">
+            <div class="books-container flex">
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_1.jpg" alt="Book1">
+                            <h5><a href="#">Sổ tay sinh viên</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_2.jpg" alt="Book2">
+                            <h5><a href="#">Quản trị nhân lực</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_3.jpg" alt="Book3">
+                            <h5><a href="#">Luật hành chính</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_4.jpg" alt="Book3">
+                            <h5><a href="#">Lịch sử nhà nước và pháp luật</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_5.jpg" alt="Book3">
+                            <h5><a href="#">Phát triển phần mềm mã nguồn mở</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_6.jpg" alt="Book2">
+                            <h5><a href="#">Công nghệ phần mềm</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_7.jpg" alt="Book2">
+                            <h5><a href="#">Lập trình web</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_8.jpg" alt="Book2">
+                            <h5><a href="#">Lập trình giao diện</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_9.jpg" alt="Book2">
+                            <h5><a href="#">Quản trị dự án</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/edu_book/edu_10.jpg" alt="Book2">
+                            <h5><a href="#">Tâm lí học đại cương</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_6.jpg" alt="Book2">
+                            <h5><a href="#">Có cần lấy chồng không?</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_7.jpg" alt="Book2">
+                            <h5><a href="#">Khi tôi ngẩng đầu lên lần nữa</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_8.jpg" alt="Book2">
+                            <h5><a href="#">Yêu tổng tài tội ác tài trời!</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_9.jpg" alt="Book2">
+                            <h5><a href="#">Chúng ta năm đó</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_10.jpg" alt="Book2">
+                            <h5><a href="#">Anh là tất cả những gì em ghét nhất</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--3-->
+        <section class="bookshelf" id="favorite" style="display: none;">
+            <div class="books-container flex">
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_1.jpg" alt="Book1">
+                            <h5><a href="/html/inbook.html">Bên nhau trọn đời</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_2.jpg" alt="Book2">
+                            <h5><a href="#">Đại thiếu gia</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_3.jpg" alt="Book3">
+                            <h5><a href="#">Anh thích em</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_4.jpg" alt="Book3">
+                            <h5><a href="#">Nơi nào hạ mát</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_5.jpg" alt="Book3">
+                            <h5><a href="#">Vào một ngày nào đó</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_1.jpg" alt="Book1">
+                            <h5><a href="/html/inbook.html">Tư Duy Phản Biện</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_2.jpg" alt="Book2">
+                            <h5><a href="#">Vật lý thiên văn cho người vội vã</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_3.jpg" alt="Book3">
+                            <h5><a href="#">Đắc nhân tâm</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_4.jpg" alt="Book4">
+                            <h5><a href="#">Tâm lý học đám đông</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_5.jpg" alt="Book5">
+                            <h5><a href="#">Người đa ngôn ngữ</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_6.jpg" alt="Book6">
+                            <h5><a href="#">Tuổi trẻ đáng giá bao nhiêu</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_7.jpg" alt="Book7">
+                            <h5><a href="#">Tư duy đột phá</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_8.jpg" alt="Book8">
+                            <h5><a href="#">Nghệ thuật lấy lòng khách hàng</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_9.jpg" alt="Book9">
+                            <h5><a href="#">Sống như người Nhật</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_10.jpg" alt="Book10">
+                            <h5><a href="#">Chào hàng chuyên nghiệp để bán hàng thành công</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--4-->
+        <section class="bookshelf" id="highrated" style="display: none;">
+            <div class="books-container flex">
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_1.jpg" alt="Book1">
+                            <h5><a href="/html/inbook.html">Bên nhau trọn đời</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_2.jpg" alt="Book2">
+                            <h5><a href="#">Đại thiếu gia</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_3.jpg" alt="Book3">
+                            <h5><a href="#">Anh thích em</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_4.jpg" alt="Book3">
+                            <h5><a href="#">Nơi nào hạ mát</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_5.jpg" alt="Book3">
+                            <h5><a href="#">Vào một ngày nào đó</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_1.jpg" alt="Book1">
+                            <h5><a href="/html/inbook.html">Tư Duy Phản Biện</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_2.jpg" alt="Book2">
+                            <h5><a href="#">Vật lý thiên văn cho người vội vã</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_3.jpg" alt="Book3">
+                            <h5><a href="#">Đắc nhân tâm</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_4.jpg" alt="Book4">
+                            <h5><a href="#">Tâm lý học đám đông</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_5.jpg" alt="Book5">
+                            <h5><a href="#">Người đa ngôn ngữ</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_6.jpg" alt="Book6">
+                            <h5><a href="#">Tuổi trẻ đáng giá bao nhiêu</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_7.jpg" alt="Book7">
+                            <h5><a href="#">Tư duy đột phá</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_8.jpg" alt="Book8">
+                            <h5><a href="#">Nghệ thuật lấy lòng khách hàng</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_9.jpg" alt="Book9">
+                            <h5><a href="#">Sống như người Nhật</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/self_help/self_10.jpg" alt="Book10">
+                            <h5><a href="#">Chào hàng chuyên nghiệp để bán hàng thành công</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--5-->
+        <section class="bookshelf" id="newrelease" style="display: none;">
+            <div class="books-container flex">
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/kid_book/kid_10.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Lá Đỏ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_1.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Dế mèn phiêu lưu kí</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_5.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Trên đồi mở mắt và mơ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_8.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Ba chú heo con</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_2.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Thành phố phép màu</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_3.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Mơ như thế mới hay</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_4.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Đi như thế mới thích</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_5.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Trên đồi mở mắt và mơ</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_6.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Bông hồng tò he</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div>
+                            <img src ="../resources/images/book/kid_book/kid_7.jpg" alt="CPCR">
+                            <h5><a href="html/inbook.html">Sơn tinh thủy tinh</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="books flex">
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_6.jpg" alt="Book2">
+                            <h5><a href="#">Có cần lấy chồng không?</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_7.jpg" alt="Book2">
+                            <h5><a href="#">Khi tôi ngẩng đầu lên lần nữa</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_8.jpg" alt="Book2">
+                            <h5><a href="#">Yêu tổng tài tội ác tài trời!</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_9.jpg" alt="Book2">
+                            <h5><a href="#">Chúng ta năm đó</a></h5>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div> 
+                            <img src ="../resources/images/book/love_book/love_10.jpg" alt="Book2">
+                            <h5><a href="#">Anh là tất cả những gì em ghét nhất</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!--footer-->
+    <footer>
+        <!-- Nút liên hệ bên trái -->
+        <section>
+            <button id="scrollToTop" class="scroll-to-top"></button>
+            <div class="contact-buttons">
+                <a href="https://www.facebook.com/khoi03112" target="_blank" class="contact-button flex">
+                    <img src="../resources/images/others/fb.png" alt="fb Logo">
+                </a>
+                <a href="https://www.facebook.com/ai.thien.946517" target="_blank" class="contact-button flex">
+                    <img src="../resources/images/others/ins.png" alt="ins Logo">
+                </a>
+            </div>
+         </section>
+        <div class="flex">
+            <div class="logo flex extra">
+                <img src="../resources/images/img_main/Logo_main.png" alt="Logo">
+                <h1>NGÀN SAO LIBRARY</h1>
+            </div>
+            <div class="contact">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Địa chỉ:<span>Nguyễn Bình, Nhơn Đức, Nhà Bè, Tp Hồ Chí Minh</span></li>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:nhu.nt2508@gmail.com">nhu.nt2508@gmail.com</a></li>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:khoi25922@gmail.com">khoi25922@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Hỗ trợ online</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Số điện thoại: 0387291238</li>
+                    <li><i class="fas fa-phone"></i> Số điện thoại: 0387354158</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="certi">
+            <img src="../resources/images/others/certification.png" alt="chứng nhận">
+        </div>
+        <div>
+            <p>Công ty Cổ phần Sách điện tử Ngàn Sao - Nguyễn Bình, Nhơn Đức, Huyện Nhà Bè, thành phố Hồ Chí Minh, Việt Nam.</p>
+            <p>ĐKKD số 0108796796 do SKHĐT TP Hà Nội cấp ngày 24/06/2019</p>
+            <p>Giấy xác nhận Đăng ký hoạt động phát hành xuất bản phẩm điện tử số 8132/XN-CXBIPH do Cục Xuất bản, In và Phát hành cấp ngày 31/12/2023</p>
+            <p>Giấy chứng nhận Đăng ký cung cấp dịch vụ nội dung thông tin trên mạng Viễn thông di động số 19/GCN-DĐ do Cục Phát thanh, truyền hình và thông tin điện tử ký ngày 11/03/2024</p>
+            <p>Số VPGD: 024.73086566 | Số CSKH: 1900545482 nhánh 5 | Hotline: 0393372783</p>
+        </div>
+    </footer>   
+</body>
+</html>

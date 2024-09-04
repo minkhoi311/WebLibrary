@@ -1,0 +1,268 @@
+/* Phần header hả như??? */
+.head-content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(#f7f8f8, #f5e6e0,#f7c6c7, #f2a5a5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head-content > .flex {
+    flex: 1;
+}
+
+.head-content > div h1 {
+    font-size: 3vw;
+    color:#fe8e8e;
+    text-shadow:1px 2px 3px #d55a5a;
+}
+
+.head-content > div a {
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 1.2vw;
+}
+      /*thanh tìm kiếm*/
+      .search {
+        flex:2;
+        align-items: center;
+        position:relative;
+        border-radius: 25px;
+        overflow: hidden;
+        background-color: #fff;
+        margin-left: 2vw;
+        margin-right: 3vw;
+    }
+    
+    .search span {
+        position:relative;
+        left: 10px;
+        font-size: 1vw;
+        color: #665b5b;
+        background-color: #ffecb3; 
+        border-radius: 5px; 
+        padding: 5px 10px;
+    }
+    .search input[type="search"] {
+        width: 85%;
+        padding: 10px 20px;
+        font-size: 1.3vw;
+        border: none; 
+        outline: none;
+    }
+    .search i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5vw;
+        color: #643636; 
+    }
+
+
+/* Body á cà na xí mụi */
+
+/* Phần display */
+.adver_display {
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 2%;
+}
+
+.slider-container {
+    position: relative;
+}
+
+/* Các ảnh trong slider */
+.ads_img {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.ads_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 2vw;
+    object-fit: cover;
+    transform: translate(-50%, -50%); /* Căn giữa hình ảnh */
+}
+
+/* Phần nút điều khiển */
+.slider-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1vw; /* Khoảng cách giữa các chấm */
+    z-index: 10;
+}
+
+.dot {
+    height: 1vw;
+    width: 1vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.dot.actdot {
+    background-color: #fe8e8e;
+}
+
+/* Phần trưng bày truyện á tr */
+main {
+    margin: 3vw auto;
+    width: 80%;
+    border-radius: 20px; 
+}
+
+main > section {
+    margin-bottom: 3vw;
+}
+
+.kid-part > h1{
+    font-size: 2vw;
+    color: white
+}
+
+/* Code phần popular kid nhaaaa */
+/* Tiêu đề popular content*/
+section > div > h1 {
+    margin-top:10px;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    color: rgb(245, 235, 235);
+}
+
+/* code cũ phần bookshelf*/
+.bookshelf {
+    position:relative;
+    width: 90%;
+    background-color: rgb(241, 221, 221);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.books-container {
+    flex-direction:row;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.enlarged {
+    animation: shake 5s ease-in-out, zoom 2s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes zoom {
+    20% { transform: scale(0.8); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.books {
+    transition: transform 0.5s ease;
+}
+
+.book {
+    width: 11vw;
+    text-align: center;
+    padding: 10px;
+    cursor: zoom-in;
+    margin: 0 1vw;
+}
+
+.book h5 > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.book h5 > a:hover {
+    color: #d55a5a;
+}
+
+.book img {
+    border-radius: 1vw;
+
+    width: 100%;
+    height: 15vw;
+}
+
+.book h5 {
+    font-size: 1vw;
+}
+
+.book div {
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.book div:hover {
+    transform: scale(1.05);
+}
+/*phần nút nè*/
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    border-radius: 40%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: red;
+}
+
+
+/* này là video ăn ké */
+.video {
+    width: 30vw !important;
+}
+
+.video div:hover {
+    transform: scale(1.01)!important;
+}
+.video iframe {
+    width: 100%;
+    height: 20vw; 
+    border-radius: 6px; 
+}

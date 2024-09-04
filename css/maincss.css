@@ -1,0 +1,532 @@
+header.banner {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(#f7f8f8, #f5e6e0,#f7c6c7, #f2a5a5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    align-items: center;
+    flex:3;
+}
+
+.logo img {
+    max-height: 7vw;
+    margin-right: 5px;
+}
+
+.logo > h1 {
+    font-size: 2vw;
+    color:#fe8e8e;
+    text-shadow:1px 2px 3px #d55a5a;
+}
+
+      /*thanh tìm kiếm*/
+.search {
+    flex:5;
+    align-items: center;
+    position:relative;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: 7vw;
+}
+
+.search span {
+    position:relative;
+    left: 10px;
+    font-size: 1vw;
+    color: #665b5b;
+    background-color: #ffecb3; 
+    border-radius: 5px; 
+    padding: 5px 10px;
+}
+.search input[type="search"] {
+    width: 85%;
+    padding: 10px 20px;
+    font-size: 1.3vw;
+    border: none; 
+    outline: none;
+}
+.search i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5vw;
+    color: #643636; 
+}
+        /*khúc nút đăng nhập nè */
+.signup {
+    flex:2;
+    justify-content: right;    
+}
+
+.signup > button {
+    text-decoration: none;
+    color: #000;
+    background-color: #e17979;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    transition: background-color 0.3s;
+    border-style: none;
+}
+button:hover {
+    background-color: #c35757;
+    border: none;
+}
+
+#welcome-message{
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    color: white; 
+    background: linear-gradient(90deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    font-weight: bold; 
+    border-radius: 5px; 
+}
+
+/* */
+
+/* anh ne */
+.adver_display {
+    width: 80%;
+    margin-top: 0.9%;
+}
+.slider-container {
+    position: relative;
+}
+
+.ads_img  {
+    position: relative;
+    height: 20vw;
+}
+.ads_img img {
+    width: 98%; 
+    height: 100%; 
+    border-radius: 20px;    
+    position: absolute;
+    top:2%;
+    left: 1%;
+}
+    /*Phần nút*/
+    .slider-dots {
+        position: absolute;
+        left: 45%;
+        bottom: 5%;
+        gap: 1vw; 
+        z-index: 10;
+    }
+    
+    .dot {
+        height: 0.7vw;
+        width: 0.7vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: block;
+        transition: background-color 0.6s ease;
+        cursor: pointer;
+    }
+    
+    .dot.actdot {
+        background-color: #fe8e8e;
+    }   
+
+
+/* Menu ne */
+.menu_main {
+    width: 20%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    position:relative;
+}
+
+ul.menu {
+    color: aliceblue;
+    background: linear-gradient(rgb(248, 170, 179), rgb(230, 221, 221));
+    border-radius: 20px;
+}
+.menu_main ul {
+    list-style-type: none;
+}
+/*tat ca ul */
+
+ul.menu > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size: 1.2vw;
+    border-bottom: 1px solid white;
+    padding: 7%;
+}
+ul.menu > li:last-child{
+    border-bottom: none;
+}
+
+ul.menu > li:first-child > a {
+    border-radius: 20px 20px 0px 0px;
+}
+
+ul.menu > li:last-child > a {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.menu > li > a:hover {
+    background-color: whitesmoke;
+    color: #e17979;
+}
+
+/* menu hover thể loại */
+.separate_content {
+    z-index: 100;
+    margin-left:5px;
+    display: none; 
+    position: absolute; 
+    left: 100%; 
+    top: 0;
+    background: linear-gradient(rgb(248, 170, 179), rgb(230, 221, 221)); /* Màu nền của phần nội dung */
+    border-radius: 20px;
+    width: 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng cho phần nội dung */
+}
+
+.separate_content_a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size: 1.2vw;
+    border-bottom: 1px solid white;
+    padding: 1vw;
+}
+
+.separate_content > ul > li > a.f:hover {
+    border-radius: 20px 20px 0 0;
+}
+
+.separate_content > ul > li:last-child > a{
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: none;
+}
+
+.separate_content > ul > li:hover a{
+    background-color: whitesmoke;
+    color: #e17979;
+}
+
+.separate_content.f{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.separate_content > ul > li:last-child:hover a{
+    border-radius: 0px 0px 20px 20px;
+}
+
+.separate_content {
+    position: absolute;
+    visibility: hidden;
+}
+
+.separate_content::after {
+    border-style: solid;
+    border-color:  transparent rgb(236, 181, 190) transparent transparent;
+    position: absolute;
+    left: -40px;
+    top:20%;
+    transform: translateY(-50%);
+}
+
+.having_content:hover .separate_content {
+    opacity: 1;
+    visibility: visible;
+    display: block !important;
+}
+
+.menu.separate_content {
+    flex-direction: columns !important;
+}
+
+.having_content:hover .separate_content {
+    display: block;
+}
+
+/* Tiêu đề popular content*/
+section > div > h1 {
+    margin-top:10px;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    color: rgb(245, 235, 235);
+}
+
+/* popular content nè */
+.popular_content {
+    justify-content: center;
+    list-style-type: none;
+}
+
+.popular_content > li {
+    border-left:1px solid rgb(238, 195, 195);
+    text-align: center;
+    flex: 1;
+}
+
+.popular_content > li > a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5vw;
+    color:#f5e6e0;
+    padding: 1vw 2vw; 
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.popular_content > li:first-child {
+    border-left: none;
+} 
+
+.popular_content > li > a:hover {
+    text-decoration:none;
+    color: white; 
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 1.7vw; /* Phóng to chữ khi hover */
+    transition: font-size 0.3s ease;
+}
+
+.popular_content > li > a.active {
+    text-decoration:none;
+    color: white; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    display: block;
+    font-size: 1.8; /* Phóng to chữ hơn khi active */
+    transition: font-size 0.3s ease;
+}
+
+/* Phần sách display */
+main {
+    margin-top: 2vw;
+}
+
+.bookshelf {
+    width: 70%;
+    background-color: rgb(241, 221, 221);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.bookshelf.action {
+    display: block;
+    opacity: 1;
+}
+
+.books-container {
+    flex-direction: column;
+}
+
+.enlarged {
+    animation: shake 5s ease-in-out, zoom 2s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes zoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(2); }
+}
+
+.books {
+    justify-content: space-around;
+}
+
+.book {
+    width: 11vw;
+    text-align: center;
+    padding: 10px;
+}
+
+.book h5 > a {
+    text-decoration: none;
+    color:#000;
+}
+
+.book h5 > a:hover {
+    color:#d55a5a;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 1vw;
+
+    width: 100%;
+    height: 15vw;
+}
+.book h5 {
+    font-size: 1vw;
+}
+
+.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.book div {
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out; /* Hiệu ứng mượt mà khi thay đổi viền và thu phóng */ 
+}
+
+.book div:hover {
+    cursor: zoom-in;
+    transform: scale(1.05); /* Thu phóng nhẹ khi di chuột vào */
+}
+
+/*khu origin*/
+
+.origin-content {
+    margin-top: 1vw;;
+}
+
+
+.origin-content  > div{
+    position: relative;
+    text-align: center;
+    height: fit-content;
+    background: linear-gradient(to right, #c675b2, #FAD0C4);
+    border-radius: 20px;
+}
+
+.origin-content > h3 {
+    text-align:center;
+    font-size: 3vw;
+}
+
+.img-item {
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-item a {
+    flex: 1; 
+    max-width: 10%;
+}
+
+.img-item img {
+    width: 100%;
+}
+
+/* Phần about us nè */
+
+.about_us {
+    margin-top: 8vw;
+}
+
+.text_about {
+    text-align: center; 
+    margin-bottom: 0.3vw;
+}
+
+.text_about h2 {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.text_about h3 {
+    font-size: 1vw;
+    font-style: italic; 
+}
+
+.about_us > div.flex {
+    background: linear-gradient(to right, #c675b2, #FAD0C4);
+    height: auto;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding-top: 0.5vw;
+}
+
+.about_left {
+    width: 45%;
+    margin-left: 4vw;
+    text-align: end;
+}
+
+.about_left img {
+    width: 30vw; /* Set a fixed width */
+    height: 30vw; /* Set a fixed height to match the width */
+    border-radius: 50%; /* Make the image circular */
+    object-fit:cover; /* Ensure the image covers the area without distortion */
+}
+
+.about_right {
+    width: 100%;
+    text-align: center;
+}
+
+.form-container-about {
+    flex-direction: column;
+    gap: 1vw;
+    width: 80%;
+    margin: 0 auto;
+}
+.form-container-about > h3{
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+.form-container-about input{
+    margin-left: 1vw;
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 1.2vw; 
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container-about > button {
+    padding: 1vw;
+}
+
+#trinhbay_about {
+    padding: 2vw !important;
+}
+
+.send {
+    margin-left: 1vw;
+    width: 25%;
+    padding: 1vw;
+    padding-bottom: 2px ;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 1.2vw; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#thank-you-message {
+    color: green;
+    font-weight: bold;
+    font-size: 2vw;
+    margin: 1vw;
+    transition:  1s ease, transform 1s ease;
+}
+
+#thank-you-message img{
+    width: 6vw;
+    height: 6vw;
+}
+

@@ -1,0 +1,201 @@
+footer {
+    margin-top: 10vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-top: solid 1px palevioletred;
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+}
+.contact h3 {
+    font-size: 1.6vw;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact > ul {
+    list-style-type: none;
+}
+
+.contact li {
+    margin-bottom: 0.5vw;
+    font-size: 1.2vw;
+}
+
+.contact a {
+    color:#c675b2; 
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1vw; 
+    margin-bottom: 0.5vw; 
+    color: #555;
+}
+
+.certi img {
+    width: 10vw; 
+    height: auto; 
+    margin-bottom: 1vw; 
+}
+
+.extra {
+    flex: 1 !important;
+}
+
+.contact {
+    flex: 1; 
+}
+
+.left h1 {
+    margin-left: 1vw; 
+}
+
+.contact > ul > li {
+    margin: 1vw; 
+}
+/* */
+.logo {
+    align-items: center;
+    flex:3;
+}
+
+.logo img {
+    max-height: 7vw;
+    margin-right: 5px;
+}
+
+.logo > h1 {
+    font-size: 2vw;
+    color:#fe8e8e;
+    text-shadow:1px 2px 3px #d55a5a;
+}
+
+/* quay về đầu */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 5vw; /* Kích thước của nút */
+    height: 5vw; /* Kích thước của nút */
+    background-image: url('../../resources/images/others/back.png'); 
+    background-size:cover; /* Đảm bảo hình ảnh phủ toàn bộ nút */
+    border-radius: 50%;
+    border: solid 2px white;
+    cursor: pointer;
+    display: none; 
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    opacity: 0.8; /* Hiệu ứng khi di chuột lên nút */
+}
+
+/* CSS cho thanh liên hệ */
+.contact-buttons {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+    display:none;
+}
+
+.contact-button {
+    margin-bottom: 10px;
+    width: 3vw;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-buttons .contact-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.contact-buttons .contact-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/*Không liên quan lắm nhưng mà css popup trong đây :))) */
+.popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    justify-content: center;
+    visibility: hidden;
+    transform: scale(0.8);
+    animation: popup 0.5s ease-in-out;
+}
+
+/* Hiển thị popup */
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.popcontent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup img {
+    height: 90vh;
+    border-radius: 2vw;
+}
+
+.close-pop{
+    position: absolute;
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+    top: 10px;
+    right: 10px;
+}
+
+.show {
+    display: block !important;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

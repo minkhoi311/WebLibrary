@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.flex {
+    display:flex;
+}
+
+body {
+    background-color: #f09696;
+}
+
+.tieu_de{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    color: whitesmoke;
+}

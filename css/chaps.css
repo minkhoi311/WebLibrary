@@ -1,0 +1,89 @@
+.head-content {
+    justify-content: space-between;
+    margin:5px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(#f7f8f8, #f5e6e0,#f7c6c7, #f2a5a5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head-content > h1 {
+    color:#fe8e8e;
+}
+
+.head-content > div > a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+main {
+    margin-top: 2vw;
+}
+/* Tiêu đề */
+.title h1 {
+    margin-top:10px;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 10px;
+    color: rgb(245, 235, 235);
+}
+
+.title h3 {
+    margin-top:10px;
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: 10px;
+}
+
+.title h3 > a{
+    color: rgb(245, 225, 225);
+    text-decoration: none;
+}
+
+.title h3 > a:hover {
+    color:#d55a5a;
+}
+.read-book > div{
+    width: 70%;
+    background-color: rgb(241, 221, 221);
+    margin: 0 auto;
+    border-radius: 20px;
+    box-sizing:border-box;
+}
+
+.read-book {
+    width: 100%;
+    overflow: hidden; /* Để ngăn nội dung tràn ra ngoài */
+}
+
+.read-book pre {
+    font-size: 20px;;
+    white-space: pre-wrap; /* Cho phép gói dòng trong thẻ <pre> */
+    word-wrap: break-word; /* Bẻ từ nếu cần */
+    width: 100%;
+    overflow: auto; /* Nếu nội dung vẫn quá dài, thêm thanh cuộn */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+    padding: 10px; /* Thêm padding nếu cần để tạo khoảng cách */
+}
+
+.in-read {
+    padding:20px;
+}
+
+.chapter-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.chapter-navigation a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #fe8e8e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.chapter-navigation a:hover {
+    background-color: #fe6a6a;
+}
