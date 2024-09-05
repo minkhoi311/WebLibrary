@@ -41,7 +41,7 @@ window.addEventListener('load',function(){
         let searchValue = this.value.toLowerCase();
         let texts = document.querySelectorAll(".book a");
 
-        // Reset styles before search
+        // chỉnh lại về ban đầu sau khi tìm kiếm
         for (let i = 0; i < texts.length; i++) {
             let bookContainer = texts[i].parentElement.parentElement;
             bookContainer.style.border = "none";
@@ -79,7 +79,7 @@ window.addEventListener('load',function(){
         });
     }
 
-    // Apply functionality to all bookshelves
+    //Chỉnh nút
     let bookshelves = document.querySelectorAll('.bookshelf');
     for (let bs of bookshelves) {
         const prevButton = bs.querySelector('.prev');

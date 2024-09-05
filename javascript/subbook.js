@@ -147,5 +147,14 @@ window.addEventListener('load',function(){
                 behavior: 'smooth'
             });
         });
+
+    // lệnh nhấn vào link mỗi cuốn sách (cc)
+    function sameLink(){
+        let linkBook = document.querySelectorAll(".book a");
+        for(let i = 0; i < linkBook.length; i++){
+            linkBook[i].href = "../html/inbook.html";
+        };
+    }
+    sameLink();
     
  })
