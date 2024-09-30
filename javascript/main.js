@@ -53,10 +53,10 @@ window.addEventListener('load',function(){
                                 behavior: "smooth",
                                 block: "center"
                             });
-                        },3000)
+                        },2000)
                         setTimeout(() => {
                             bookContainer.classList.add('enlarged');
-                        }, 3000);
+                        }, 5000);
                     }
                 }
             }

@@ -132,6 +132,9 @@ button:hover {
         background-color: #fe8e8e;
     }   
 
+    .ads_img img, .book img {
+        object-fit: cover;
+    }
 
 /* Menu ne */
 .menu_main {
@@ -314,7 +317,7 @@ main {
     border-radius: 20px;
     display: none;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .bookshelf.action {
@@ -529,4 +532,3 @@ main {
     width: 6vw;
     height: 6vw;
 }
-
